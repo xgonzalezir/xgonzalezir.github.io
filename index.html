@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Autotube</title>
+<style>
+  :root { --fondo:#fff; --texto:#1a1a1a; --suave:#5a5a5a; --linea:#e2e2e2; --enlace:#1a5fb4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fondo:#15171a; --texto:#e8e8e8; --suave:#a0a4ab; --linea:#2c3036; --enlace:#8ab4f8; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--fondo); color:var(--texto);
+         font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 16px 4rem; }
+  h1 { font-size: 1.9rem; margin: 0 0 .25rem; letter-spacing: -.02em; }
+  .sub { color: var(--suave); margin: 0 0 2.5rem; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .75rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  a { color: var(--enlace); }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--linea);
+           color: var(--suave); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Autotube</h1>
+  <p class="sub">Herramienta personal para publicar y medir un canal de YouTube.</p>
+
+  <p>Autotube es un conjunto de scripts de línea de comandos que su autor usa para
+  gestionar su propio canal de YouTube. No es un servicio, no tiene registro de
+  usuarios y no se ofrece a terceros: se ejecuta en el ordenador del autor.</p>
+
+  <h2>Qué hace</h2>
+  <ul>
+    <li>Sube vídeos al canal de YouTube de su propietario, de forma programada,
+        indicando título, descripción, etiquetas y fecha de publicación.</li>
+    <li>Lee las estadísticas públicas y privadas de ese mismo canal (visitas,
+        duración media de visualización, fuentes de tráfico, suscriptores) para
+        generar un informe de texto.</li>
+  </ul>
+
+  <h2>Qué permisos de Google usa y para qué</h2>
+  <ul>
+    <li><code>youtube.upload</code> — subir los archivos de vídeo al canal.</li>
+    <li><code>youtube.readonly</code> — leer los datos del canal y de sus vídeos
+        para el informe.</li>
+    <li><code>yt-analytics.readonly</code> — leer las métricas de YouTube Analytics
+        del canal.</li>
+  </ul>
+
+  <p>Todos los permisos se ejercen únicamente sobre el canal de la persona que
+  concede el acceso. La aplicación no lee ni modifica ningún otro dato de la
+  cuenta de Google.</p>
+
+  <h2>Privacidad</h2>
+  <p>El tratamiento de los datos se describe en la
+  <a href="privacidad.html">política de privacidad</a>.</p>
+
+  <footer>
+    Contacto: <a href="mailto:xgonzalez.editor@gmail.com">xgonzalez.editor@gmail.com</a><br>
+    Última actualización: 19 de octubre de 2026
+  </footer>
+</main>
+</body>
+</html>

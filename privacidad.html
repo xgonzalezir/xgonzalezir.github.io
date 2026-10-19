@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · Autotube</title>
+<style>
+  :root { --fondo:#fff; --texto:#1a1a1a; --suave:#5a5a5a; --linea:#e2e2e2; --enlace:#1a5fb4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fondo:#15171a; --texto:#e8e8e8; --suave:#a0a4ab; --linea:#2c3036; --enlace:#8ab4f8; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--fondo); color:var(--texto);
+         font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 16px 4rem; }
+  h1 { font-size: 1.7rem; margin: 0 0 .25rem; letter-spacing: -.02em; }
+  .sub { color: var(--suave); margin: 0 0 2.5rem; }
+  h2 { font-size: 1.1rem; margin: 2.25rem 0 .6rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  a { color: var(--enlace); }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--linea);
+           color: var(--suave); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de privacidad</h1>
+  <p class="sub">Aplicación «Autotube» · en vigor desde el 19 de octubre de 2026</p>
+
+  <p>Autotube es una herramienta personal de línea de comandos que su autor
+  ejecuta en su propio ordenador para gestionar su canal de YouTube. No tiene
+  servidores, no publica ningún servicio en internet y no está dirigida a otros
+  usuarios.</p>
+
+  <h2>Qué datos se usan</h2>
+  <p>Cuando una persona autoriza la aplicación con su cuenta de Google, Autotube
+  accede, mediante las API de YouTube, a:</p>
+  <ul>
+    <li>El canal de YouTube asociado a esa cuenta: nombre e identificador.</li>
+    <li>Los vídeos de ese canal: identificador, título, descripción, etiquetas,
+        fecha de publicación, estado de privacidad y duración.</li>
+    <li>Las métricas de ese canal en YouTube Analytics: visitas, minutos
+        reproducidos, duración media de visualización, fuentes de tráfico,
+        suscriptores ganados y perdidos, y datos demográficos agregados que
+        YouTube proporciona sin identificar a ninguna persona.</li>
+  </ul>
+  <p>Autotube no accede al correo, a los contactos, a los archivos ni a ningún
+  otro dato de la cuenta de Google, y no solicita permisos distintos de los
+  enumerados en la <a href="index.html">página principal</a>.</p>
+
+  <h2>Para qué se usan</h2>
+  <p>Exclusivamente para dos cosas: subir vídeos al canal de quien concede el
+  permiso, y generar un informe de texto con la evolución de ese mismo canal.
+  No se usan para ninguna otra finalidad, ni para publicidad, ni para elaborar
+  perfiles.</p>
+
+  <h2>Dónde se guardan</h2>
+  <p>Los datos descargados se guardan en archivos CSV y de texto en el ordenador
+  del autor. El testigo de acceso (token de OAuth) se guarda en un archivo local
+  del mismo ordenador. Nada de esto se sube a ningún servidor ni se almacena en
+  internet.</p>
+
+  <h2>Con quién se comparten</h2>
+  <p>Con nadie. Los datos no se venden, no se ceden, no se transfieren a terceros
+  y no se publican. La aplicación solo se comunica con las API de Google
+  necesarias para las funciones descritas.</p>
+
+  <h2>Cuánto tiempo se conservan</h2>
+  <p>Los archivos permanecen en el ordenador del autor mientras le resultan
+  útiles para comparar periodos, y se borran manualmente cuando dejan de serlo.
+  El token de acceso se borra al revocar el permiso o al eliminar el archivo.</p>
+
+  <h2>Cómo retirar el acceso</h2>
+  <p>Cualquier persona que haya autorizado la aplicación puede retirarle el
+  permiso en cualquier momento desde
+  <a href="https://myaccount.google.com/permissions">la página de permisos de su
+  cuenta de Google</a>. A partir de ese momento la aplicación deja de poder
+  acceder a sus datos. Para solicitar el borrado de los datos ya descargados,
+  basta con escribir a la dirección de contacto.</p>
+
+  <h2>Uso de los datos de las API de Google</h2>
+  <p>El uso que Autotube hace de la información recibida de las API de Google se
+  ajusta a la
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Política
+  de Datos de Usuario de los Servicios de API de Google</a>, incluidos sus
+  requisitos de uso limitado.</p>
+
+  <h2>Cambios</h2>
+  <p>Si esta política cambia, la nueva versión se publicará en esta misma
+  dirección, con su fecha de entrada en vigor.</p>
+
+  <footer>
+    Responsable y contacto:
+    <a href="mailto:xgonzalez.editor@gmail.com">xgonzalez.editor@gmail.com</a><br>
+    <a href="index.html">Volver a la página principal</a>
+  </footer>
+</main>
+</body>
+</html>
